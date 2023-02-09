@@ -1,0 +1,75 @@
+body {
+  min-width: 1000px;
+  position: relative;
+}
+body i {
+  position: absolute;
+  user-select: none;
+  z-index: 6;
+  font-size: 18px;
+}
+
+.startGames {
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  top: 50%;
+  left: 4%;
+  transform: translateY(-50%);
+  background: #fd6a21;
+  color: #ffffff;
+}
+
+.sou {
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+.sou > div {
+  width: 250px;
+}
+.userSou span {
+  color: #b13b2e;
+}
+.userCount span {
+  color: #ed6d46;
+}
+.gameTime span {
+  color: #ea5514;
+}
+#outBox {
+  width: 800px;
+  height: 800px;
+  margin: 50px auto 0;
+  background-color: aqua;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#outBox > div {
+  width: 20%;
+  background-color: black;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+#theOne {
+  position: absolute;
+  width: 230px;
+  height: 240px;
+  left: 50%;
+  top: 50%;
+  z-index: 5;
+  background-color: red;
+  transform: translateX(-50%) translateY(-50%);
+  user-select: none;
+}
